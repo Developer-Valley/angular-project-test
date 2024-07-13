@@ -1,0 +1,22 @@
+<div class="blog-card">
+    @if (post.thumbnail != '') {
+        <img [src]="'/img/' + post.thumbnail" alt="post-thumbnail">
+    }
+    <div class="blog-card-content">
+        <div class="space-between">
+            <span class="date-added">{{post.date}}</span>
+            @if (likes > 0) {
+                <span class="likes">likes: {{likes}}</span>
+            }
+        </div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.description}}</p>
+        <div class="space-between">
+            <div class="blog-card-author">
+                <img src="/img/author.jpg" alt="author">
+                <span>{{post.author}}</span>
+            </div>
+            <span class="like-btn" (click)="like()">like</span>
+        </div>
+    </div>
+</div>

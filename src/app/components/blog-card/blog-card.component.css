@@ -1,0 +1,62 @@
+.blog-card {
+    max-width: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+.blog-card-content {
+    margin-top: -10px;
+    padding: 1rem;
+}
+
+.blog-card img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+
+.blog-card h2 {
+    font-size: 1.2rem;
+}
+
+.date-added {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.likes {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blog-card-author {
+    display: flex;
+    align-items: center;
+}
+
+.blog-card-author img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+.blog-card-author span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-btn {
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.like-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
